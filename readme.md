@@ -2,18 +2,20 @@
 
 ## 01 - Startup - Setup IDE
 
-[<b style="color:blue">01 - Theory</b>
+[**01 - Theory**
 ](./01-Start-Setup-IDE/01-Theory/)
 
-[<b style="color:gray">01 - Assignment</b>](./01-Start-Setup-IDE/01-Assignment//)
+[**01 - Assignment**](./01-Start-Setup-IDE/01-Assignment//)
 
 ## 02 - Boot Process - SPL - BlinkLED
 
-[<b style="color:blue">02 - Theory</b>
+[**02 - Theory**
 ](./02-BootProcess-SPLBlinkLED/02-Theory)
 
-[<b style="color:gray">02 - Assignment</b>
+[**02 - Assignment**
 ](./02-BootProcess-SPLBlinkLED/02-Assignment)
+
+Video: https://www.youtube.com/watch?v=ZRFb8rIwPhQ
 
 ## 03 - AUTOSAR Classic
 

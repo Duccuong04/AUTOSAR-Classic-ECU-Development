@@ -2,13 +2,13 @@
 #include "stm32f10x_rcc.h"
 #include "stm32f10x_gpio.h"
 #include "stm32f10x_tim.h"
-//#include "Dio.h"
 
 void delay(uint16_t time)
 {
     TIM_SetCounter(TIM2, 0);
     while (TIM_GetCounter(TIM2) < time)
         ;
+        
 }
 
 int main()
@@ -32,6 +32,9 @@ int main()
 
     while (1)
     {
-        delay(100);
+        GPIO_SetBits(GPIOC, GPIO_Pin_13);
+        delay(1000);
+        GPIO_ResetBits(GPIOC, GPIO_Pin_13);
+        delay(1000);
     }
 }

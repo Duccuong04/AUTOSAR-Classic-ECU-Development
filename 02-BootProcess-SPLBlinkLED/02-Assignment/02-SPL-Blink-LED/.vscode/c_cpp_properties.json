@@ -3,8 +3,8 @@
         {
             "name": "STM32",
             "includePath": [
-                "${workspaceFolder}/02-BootProcess-SPLBlinkLED/02-Assignment/02-SPL-Blink-LED/SPL/inc",
-                "${workspaceFolder}/02-BootProcess-SPLBlinkLED/02-Assignment/02-SPL-Blink-LED/Core",
+                "${workspaceFolder}/SPL/inc",
+                "${workspaceFolder}/Core",
                 "E:/GNUARM/10 2021.10/arm-none-eabi/include",
                 "E:/SPLib/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/STM32F10x_StdPeriph_Driver/inc",
                 "E:/SPLib/STM32F10x_StdPeriph_Lib_V3.6.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x",

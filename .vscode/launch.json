@@ -7,7 +7,7 @@
       "request": "launch",
       "servertype": "openocd",
       "cwd": "${workspaceFolder}",
-      "executable": "${workspaceFolder}/blinkled.elf",
+      "executable": "${workspaceFolder}/02-BootProcess-SPLBlinkLED/02-Assignment/02-SPL-Blink-LED/blinkled.elf",
       "device": "STM32F103C8Tx",
       "configFiles": [
         "E:/OpenOCD/xpack-openocd-0.12.0-6/openocd/scripts/interface/stlink.cfg",
@@ -15,7 +15,7 @@
       ],
       "runToEntryPoint": "main",
       "preLaunchTask": "Build STM32",
-      "svdFile": "${workspaceFolder}/STM32F103.svd"
+      "svdFile": "${workspaceFolder}/02-BootProcess-SPLBlinkLED/02-Assignment/02-SPL-Blink-LED/STM32F103.svd"
     }
   ]
 }
