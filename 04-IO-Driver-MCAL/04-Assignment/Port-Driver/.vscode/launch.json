@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug (OpenOCD)",
+      "type": "cortex-debug",
+      "request": "launch",
+      "servertype": "openocd",
+      "cwd": "${workspaceFolder}",
+      "executable": "${workspaceFolder}/blinkled.elf",
+      "device": "STM32F103C8Tx",
+      "configFiles": [
+        "E:/OpenOCD/xpack-openocd-0.12.0-6/openocd/scripts/interface/stlink.cfg",
+        "E:/OpenOCD/xpack-openocd-0.12.0-6/openocd/scripts/target/stm32f1x.cfg"
+      ],
+      "runToEntryPoint": "main",
+      "preLaunchTask": "Build STM32",
+      "svdFile": "${workspaceFolder}/STM32F103.svd"
+    }
+  ]
+}
