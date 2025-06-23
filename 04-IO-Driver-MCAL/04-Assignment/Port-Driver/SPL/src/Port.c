@@ -26,6 +26,10 @@ static uint8_t Port_Initialized = 0;  /* Biến trạng thái xác định Port 
 /* ===============================
  *      Internal Helper Function
  * =============================== */
+uint8_t GetChannelIdFromConfig(const Port_PinConfigType* pinCfg)
+{
+    return (pinCfg->PortNum * 16) + pinCfg->PinNum;
+}
 
 /**********************************************************
  * @brief Cấu hình 1 pin GPIO dựa trên thông số AUTOSAR
@@ -45,7 +49,7 @@ static void Port_ApplyPinConfig(const Port_PinConfigType* pinCfg) {
     }
 
     GPIO_InitStruct.GPIO_Pin = pinMask;
-    GPIO_InitStruct.GPIO_Speed = GPIO_Speed_2MHz;
+    GPIO_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;
 
     /* Cấu hình mode - chỉ lấy ví dụ mode DIO */
     if (pinCfg->Mode == PORT_PIN_MODE_DIO) {

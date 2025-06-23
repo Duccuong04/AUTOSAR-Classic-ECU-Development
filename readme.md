@@ -33,3 +33,9 @@ Video viết DIO Driver của I/O Driver - MCAL trong tầng BSW của AUTOSAR C
 
 https://www.youtube.com/watch?v=NzV-JTE9Wz0
 
+Video kết hợp DIO & PORT Driver:
+
+https://youtu.be/p6PcURnkwy0
+
+
+

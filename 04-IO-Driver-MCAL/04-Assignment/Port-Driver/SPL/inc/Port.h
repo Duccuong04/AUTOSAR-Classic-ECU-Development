@@ -87,6 +87,7 @@ typedef uint8 Port_PinModeType;
 typedef struct {
     uint8  PortNum;            /**< 0=A, 1=B, 2=C, 3=D */
     uint8  PinNum;             /**< 0..15 */
+  //uint8 ChannelId;           /**< Lấy ra ChannelID từ Pin nhập vào */
     Port_PinModeType Mode;     /**< Chế độ chức năng */
     Port_PinDirectionType Direction;  /**< Chiều ban đầu */
     uint8  DirectionChangeable;/**< 1=cho phép đổi chiều runtime */
@@ -147,5 +148,7 @@ void Port_GetVersionInfo(Std_VersionInfoType* versioninfo);
  * @param[in] Mode   Mode chức năng cần set
  */
 void Port_SetPinMode(Port_PinType Pin, Port_PinModeType Mode);
+
+uint8_t GetChannelIdFromConfig(const Port_PinConfigType* pinCfg);
 
 #endif /* PORT_H */
