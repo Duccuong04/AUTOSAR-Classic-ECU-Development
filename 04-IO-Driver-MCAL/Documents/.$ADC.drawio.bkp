@@ -1,0 +1,118 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.2 Chrome/134.0.6998.178 Electron/35.1.2 Safari/537.36" version="26.2.2">
+  <diagram name="Page-1" id="LwE6G4I9LwXqRc1wXF9b">
+    <mxGraphModel dx="1491" dy="894" grid="1" gridSize="14" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-1" value="ADC sử dụng SPL (ví dụ chân A0)&lt;div&gt;cơ bản, k ngắt, k DMA&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="392" y="112" width="196" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-3" value="Clock RCC" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="14" y="252" width="126" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-4" value="Config GPIO" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="252" width="126" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-5" value="ADC config" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="427" y="252" width="126" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-6" value="uint32 ADC mode" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="364" width="126" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-7" value="FunctionalState ADC_ScanConvMode&lt;div&gt;1 kênh hay nhiều kênh&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="376" y="364" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-8" value="FunctionalState ADC_ContinuousConvMode&lt;div&gt;Chuyển đổi 1 lần hay liên tục&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="630" y="364" width="252" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-9" value="uint32_t ADC_ExternalTrigConv" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="182" y="462" width="182" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-10" value="uint32_t ADC_DataAlign&lt;div&gt;Left Right&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="390" y="462" width="182" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-11" value="uint8_t ADC_NbrOfChannel&lt;div&gt;Số kênh ADC sử dụng 1...16&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="658" y="462" width="182" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-12" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1014" y="981.88232421875" as="sourcePoint" />
+            <mxPoint x="1008" y="56" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-13" value="ADC Driver - MCAL" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="112" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-15" value="Type definition" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="192" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-18" value="ADC ConfigType&lt;div&gt;struct&lt;/div&gt;&lt;div&gt;Khởi tạo bộ ADC&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1022" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-19" value="ADC ChannelType&lt;div&gt;uint&lt;/div&gt;&lt;div&gt;ID của kênh ADC&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-20" value="ADC GroupType&lt;div&gt;uint&lt;/div&gt;&lt;div&gt;ID của nhóm kênh ADC&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1344" y="280" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-21" value="ADC ValueGroupType&lt;div&gt;int&lt;/div&gt;&lt;div&gt;Mảng lưu giá trị thô đọc được từ các kênh ADC&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1022" y="378" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-22" value="ADC PrescaleType&lt;div&gt;uint&lt;/div&gt;&lt;div&gt;Bộ chia trước clock RCC cấp cho ADC&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="378" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-24" value="ADC_ConversionTimeType" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1335" y="378" width="158" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-25" value="ADC_SamplingTimeType" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1022" y="476" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-26" value="ADC_ResolutionType" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1204" y="476" width="158" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-27" value="ADC StatusType" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1386" y="476" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-28" value="ADC TriggerSourceType&lt;div&gt;HW SW&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1018" y="574" width="144" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-29" value="ADC GroupConvMode" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1204" y="574" width="143" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-30" value="ADC_GroupPriorityType" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1386" y="574" width="154" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-31" value="ADC_GroupDefType&lt;div&gt;ID nhóm&lt;/div&gt;&lt;div&gt;Mảng chứa các kênh ADC&lt;/div&gt;&lt;div&gt;Độ ưu tiên&lt;/div&gt;&lt;div&gt;Số lượng kênh&lt;/div&gt;&lt;div&gt;Trạng thái&lt;/div&gt;&lt;div&gt;Kết quả chuyển đổi&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1018" y="686" width="172" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-32" value="ADC_StreamNumSampleType&lt;div&gt;Số lượng group sử dụng DMA&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1208" y="686" width="178" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-33" value="ADC_StreamBufferModeType&lt;div&gt;Kiểu DMA: circular hay...&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="686" width="178" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-34" value="ADC_GroupAccessModeType&lt;div&gt;Sử dụng DMA hay ko&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1026" y="840" width="178" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-35" value="ADC_HWTriggerSignalType&lt;div&gt;xung kích cạnh lên xuống để bộ ADC bắt đầu chuyển đổi&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1222" y="840" width="178" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-36" value="ADC_HWTriggerTimeType&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1428" y="842" width="178" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-38" value="&lt;div&gt;&lt;span style=&quot;text-align: left;&quot; class=&quot;fontstyle0&quot;&gt;Adc_PriorityImplementationType&lt;/span&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&lt;/span&gt;&lt;br style=&quot;text-align: left;&quot;&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1026" y="924" width="178" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-40" value="&lt;div&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Adc_GroupReplacementType&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1222" y="924" width="178" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-42" value="&lt;span style=&quot;text-align: left;&quot; class=&quot;fontstyle0&quot;&gt;Adc_ChannelRangeSelectType&lt;/span&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1428" y="924" width="178" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj51kIIwcNdNe9kIRZit-43" value="&lt;span style=&quot;text-align: left;&quot;&gt;Adc_ResultAlignmentType&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1036" y="1008" width="154" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
